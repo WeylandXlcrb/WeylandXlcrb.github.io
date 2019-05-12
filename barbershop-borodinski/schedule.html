@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Наши работы»</title>
+    <title>Записаться</title>
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
@@ -18,7 +18,7 @@
             </picture>
         </section>
         <nav class="nav nav--js">
-            <div class="nav__link nav__link--current">Наши работы</div>
+            <div class="nav__link nav__link--current">Записаться</div>
             <div class="nav__bar">
                 <div class="nav__toggle">
                     <span class="nav__toggle__bar"></span>
@@ -27,8 +27,8 @@
                 </div>
                 <ul class="nav__links">
                     <li class="nav__link"><a href="index.html">Главная</a></li>
-                    <li class="nav__link nav__link--active">Наши работы</li>
-                    <li class="nav__link"><a href="schedule.html">Записаться</a></li>
+                    <li class="nav__link"><a href="portfolio.html">Наши работы</a></li>
+                    <li class="nav__link nav__link--active">Записаться</li>
                     <li class="nav__link"><a href="#">Контакты</a></li>
                     <li class="nav__link nav__link--sign-in">
                         <a href="login.html">
@@ -68,138 +68,89 @@
     <main class="main main--inner">
         <div class="divider">
             <div></div>
-        </div>    
-        <section class="portfolio">
-            <h2>Наши работы</h2>
-            <ul class="cards">
-                <li class="card card--best">
-                    <div class="card__img">
-                        <img src="img/photo-1.jpg" alt="">
-                    </div>
-                    <div class="card__badge">Работа месяца</div>
-                    <div class="card__desc">
-                        <b class="card__name">Лжепётр Мчиславский</b>
-                        <p class="card__text">
-                            Где я только не стригся, но так как делаете это вы - не умеет никто другой! Еще раз спасибо и до скорого!
-                        </p>
-                        <ul class="card__services">
-                            <li class="card__service">
-                                <img src="img/scissors-icon.svg" alt="">
-                                <p>Стрижка</p>
-                            </li>
-                            <li class="card__service">
-                                <img src="img/beard-1.svg" alt="">
-                                <p>Бритьё</p>
-                            </li>
-                            <li class="card__service">
-                                <img src="img/mustache-icon.svg" alt="">
-                                <p>Усы</p>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="card__img">
-                        <img src="img/photo-2.jpg" alt="">
-                    </div>
-                    <div class="card__desc">
-                        <b class="card__name">Саша Мальцев</b>
-                        <p class="card__text">
-                            Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?
-                        </p>
-                        <ul class="card__services">
-                            <li class="card__service">
-                                <img src="img/scissors-icon.svg" alt="">
-                                <p>Стрижка</p>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="card__img">
-                        <img src="img/photo-3.jpg" alt="">
-                    </div>
-                    <div class="card__desc">
-                        <b class="card__name">Владимир Иваныч</b>
-                        <p class="card__text">
-                            К зимнему сезону - готов!
-                        </p>
-                        <ul class="card__services">
-                            <li class="card__service">
-                                <img src="img/beard-1.svg" alt="">
-                                <p>Бритьё</p>
-                            </li>
-                            <li class="card__service">
-                                <img src="img/mustache-icon.svg" alt="">
-                                <p>Усы</p>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="card__img">
-                        <img src="img/photo-4.jpg" alt="">
-                    </div>
-                    <div class="card__desc">
-                        <b class="card__name">Винстон Синий</b>
-                        <p class="card__text">
-                            Как только заростаю и волосы начинают мешать видеть - бегом в Бородинский!
-                        </p>
-                        <div class="card__services">
-                            <div class="card__service">
-                                <img src="img/scissors-icon.svg" alt="">
-                                <p>Стрижка</p>
-                            </div>
-                        </div>
-                    </div>
-                </li>    
-            </ul>
+        </div>
+        <section class="schedule">
+            <h1>Запись на стрижку</h1>
+            <form action="" class="form">
+                <div class="form__first-row">
+                    <label for="surname" class="visually-hidden">Фамилия</label>
+                    <input type="text" name="surname" id="surname" placeholder="Фамилия" required>
+                    <label for="name" class="visually-hidden">Имя</label>
+                    <input type="text" name="name" id="name" placeholder="Имя" required>
+                    <label for="patronymic" class="visually-hidden">Отчество</label>
+                    <input type="text" name="patronymic" id="patronymic" placeholder="Отчество" required>
+                </div>
+                <div class="form__second-row">
+                    <label for="tel" class="visually-hidden">Контактный телефон</label>
+                    <input type="text" name="tel" id="tel" placeholder="Контактный телефон" required>
+                    <label for="email" class="visually-hidden">Контактный e-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Контактный e-mail" required>
+                </div>
+                <div class="form__third-row">
+                    <label for="info" class="visually-hidden">Дополнительная информация для мастера</label>
+                    <textarea name="info" id="info" placeholder="Доп. информация для мастера"></textarea>
+                </div>
+                <div class="form__beard-type">
+                    <p class="form__subtitle">Выберите модель бороды:</p>
+                    <label for="admiral">
+                        <input type="radio" name="beard-type" id="admiral" value="admiral" required>
+                        адмирал
+                        <img src="img/beard-1.svg" alt="">
+                    </label>
+                    <label for="lesorub">
+                        <input type="radio" name="beard-type" id="lesorub" value="lesorub" required>
+                        лесоруб
+                        <img src="img/beard-2.svg" alt="">
+                    </label>
+                    <label for="polyarnik">
+                        <input type="radio" name="beard-type" id="polyarnik" value="polyarnik" required>
+                        полярник
+                        <img src="img/beard-3.svg" alt="">
+                    </label>
+                    <label for="boyarin">
+                        <input type="radio" name="beard-type" id="boyarin" value="boyarin" required>
+                        боярин
+                        <img src="img/beard-4.svg" alt="">
+                    </label>
+                    <label for="mudrec">
+                        <input type="radio" name="beard-type" id="mudrec" value="mudrec" required>
+                        мудрец
+                        <img src="img/beard-5.svg" alt="">
+                    </label>
+                </div>
+                <div class="form__misc">
+                    <p class="form__subtitle">Дополнительные услуги:</p>
+                    <label for="dye-beard">
+                        <input type="checkbox" name="dye-beard" id="dye-beard" checked>
+                        Подкрасить бороду
+                    </label>
+                    <label for="coil-mustache">
+                        <input type="checkbox" name="coil-mustache" id="coil-mustache">
+                        Накрутить усы
+                    </label>
+                    <label for="comb-beard">
+                        <input type="checkbox" name="comb-beard" id="comb-beard" checked>
+                        Причесать бороду
+                    </label>
+                    <label for="even-cut">
+                        <input type="checkbox" name="even-cut" id="even-cut">
+                        Подровнять виски
+                    </label>
+                    <label for="remove-grey">
+                        <input type="checkbox" name="remove-grey" id="remove-grey">
+                        Убрать седину
+                    </label>
+                    <label for="polish">
+                        <input type="checkbox" name="polish" id="polish">
+                        Отполировать лысину
+                    </label>
+                </div>
+                <button class="button button--brown" type="submit">Отправить заявку</button>
+            </form>
         </section>
-        <div class="divider divider--grey">
+        <div class="divider divider--dark-grey">
             <div></div>
         </div>                   
-        <section class="price">
-            <h2 class="price__title">Прейскурант</h2>
-            <table class="table">
-                <tr>
-                    <td class="table__number">1</td>
-                    <td class="table__name">Классическая стрижка</td>
-                    <td class="table__option">с мытьём головы</td>
-                    <td class="table__price">1 500 руб.</td>
-                </tr>
-                <tr>
-                    <td class="table__number">2</td>
-                    <td class="table__name">Современный вариант</td>
-                    <td class="table__option">с мытьём головы</td>
-                    <td class="table__price">1 500 руб.</td>
-                </tr>
-                <tr>
-                    <td class="table__number">3</td>
-                    <td class="table__name">Индивидуальный подход</td>
-                    <td class="table__option">с мытьём головы</td>
-                    <td class="table__price">2 000 руб.</td>
-                </tr>
-                <tr>
-                    <td class="table__number">4</td>
-                    <td class="table__name">Бритьё бороды</td>
-                    <td class="table__option">без мытья</td>
-                    <td class="table__price">500 руб.</td>
-                </tr>
-                <tr>
-                    <td class="table__number">5</td>
-                    <td class="table__name">Бритьё головы</td>
-                    <td class="table__option">с мытьём головы</td>
-                    <td class="table__price">1 000 руб.</td>
-                </tr>
-            </table>
-            <div class="price__discount">
-                <img src="img/clock.png" alt="">
-                <p>С 10:00 до 14:00 скидка 20%</p>
-            </div>    
-            <div class="divider divider--dark-grey">
-                <div></div>
-            </div>                                             
-        </section>
     </main>
     <footer class="footer">
         <div class="footer__container">
@@ -294,7 +245,7 @@
                 </div>
                 <div>
                     <p class="copyright__text">© Код написан:<br> З.А. Сулейманов, 2019</p>
-                    <a href="#" class="button button--dark">Моё портфолио</a>            
+                    <a href="../index.html" class="button button--dark">Моё портфолио</a>            
                 </div>
             </section>
         </div>

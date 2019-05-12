@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>«Седона»</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="header">
+        <ul class="mobile-nav mobile-nav--js">
+            <li class="mobile-nav__link">
+                <a href="index.html">Главная</a>
+                <div class="nav-close">
+                    <span class="nav-close__bar"></span>
+                    <span class="nav-close__bar"></span>
+                </div>
+            </li>
+            <li class="mobile-nav__link">
+                Фото и видео
+            </li>
+            <li class="mobile-nav__link">
+                <a href="form.html">Форма отзыва</a>
+            </li>
+            <li class="mobile-nav__link">
+                <a href="#">Контакты</a>
+            </li>
+        </ul>
+        <nav class="nav nav--js">
+            <ul class="nav__links">
+                <li class="nav__link">
+                    <a href="index.html">Главная</a>
+                </li>
+                <li class="nav__link nav__link--active">
+                    Фото и видео
+                </li>
+                <li class="nav__brand">
+                    <picture>
+                        <source srcset="img/logotype-desktop.png" media="(min-width: 1280px)">
+                        <img src="img/logotype.png" alt="">
+                    </picture>
+                </li>    
+                <li class="nav__link">
+                    <a href="form.html">Форма отзыва</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+            <div class="toggle">
+                <span class="toggle__bar"></span>
+                <span class="toggle__bar"></span>
+                <span class="toggle__bar"></span>
+            </div>
+        </nav>
+        <div class="hero">
+            <img src="img/hero-text.png" alt="" class="hero__text">
+            <div class="divider">
+                <div class="divider__first"></div>
+                <div class="divider__second"></div>
+            </div>
+            <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+        </div>
+    </header>
+    <main class="main">
+        <section class="photo">
+            <div class="photo__subtitle">
+                <h2>Фото и видео</h2>
+                <p>Не можете решиться на путешествие из-за курса? Фотографии помогут Вам забыть о политике и экономике.</p>
+            </div>
+            <div class="cards">
+                <div class="card card--big">
+                    <div class="card__thumb">
+                        <img src="img/photo-1.jpg" alt="">
+                    </div>
+                    <div class="card__body">
+                        <p class="card__desc">
+                            <b>Неродные просторы</b>
+                            Автор фото: Борис
+                        </p>
+                        <p class="card__likes">
+                            <img src="img/like-icon.png" alt="">
+                            1350
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__thumb">
+                        <img src="img/photo-2.jpg" alt="">
+                    </div>
+                    <div class="card__body">
+                        <p class="card__desc">
+                            <b>Местная растительность</b>
+                            Автор фото: Сергей
+                        </p>
+                        <p class="card__likes">
+                            <img src="img/like-icon.png" alt="">
+                            143
+                        </p>    
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__thumb">
+                        <img src="img/photo-3.jpg" alt="">
+                    </div>
+                    <div class="card__body">
+                        <p class="card__desc">
+                            <b>Дорога на север</b>
+                            Автор фото: Пётр
+                        </p>
+                        <p class="card__likes">
+                            <img src="img/like-icon.png" alt="">
+                            96
+                        </p>    
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__thumb">
+                        <img src="img/photo-4.jpg" alt="">
+                    </div>
+                    <div class="card__body">
+                        <p class="card__desc">
+                            <b>Мост дьявола</b>
+                            Автор фото: Антон
+                        </p>
+                        <p class="card__likes">
+                            <img src="img/like-icon.png" alt="">
+                            234
+                        </p>    
+                    </div>
+                </div>
+            </div>
+            <section class="video">
+                <p class="video__subtitle">
+                    <b>Всё еще сомневаетесь?</b>
+                    Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+                </p>
+                <div class="video__player">
+                    <img src="img/video.jpg" alt="">
+                    <div class="video__control">
+                        <svg class="video__button" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 16 20"><defs></defs><title>replay</title>
+                                <path class="cls-1" d="M185.17,750.91v-4l-5,5,5,5v-4a6,6,0,1,1-6,6h-2a8,8,0,1,0,8-8Z" 
+                                transform="translate(-177.17 -746.91)"/>
+                        </svg>
+                        <div class="video__timeline">
+                            <div></div>
+                        </div>
+                        <svg class="video__button" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 32 20"><defs></defs><title>subtitles</title>
+                            <path class="cls-1" d="M698.23,751h-26a3,3,0,0,0-3,3v14a3,3,0,0,0,3,3h26a3,3,0,0,0,3-3V754A3,3,0,0,0,698.23,751Zm-14.59,15.86A9.38,9.38,0,0,1,682,767a6.18,6.18,0,0,1-2-.32,4.37,4.37,0,0,1-1.64-1,5.08,5.08,0,0,1-1.13-1.87,7.94,7.94,0,0,1-.43-2.79,7.65,7.65,0,0,1,.47-2.85,5.25,5.25,0,0,1,1.23-1.85,4.42,4.42,0,0,1,1.68-1A5.66,5.66,0,0,1,682,755a8.87,8.87,0,0,1,1.68.14,5.82,5.82,0,0,1,1.13.31l-.45,1.92a3.42,3.42,0,0,0-.9-.27,9,9,0,0,0-1.26-.08,2.77,2.77,0,0,0-2.21,1,4.57,4.57,0,0,0-.84,3,6.33,6.33,0,0,0,.2,1.63,3.7,3.7,0,0,0,.61,1.26,2.67,2.67,0,0,0,1,.81,3.06,3.06,0,0,0,1.39.29,4.53,4.53,0,0,0,1.26-.15,3.46,3.46,0,0,0,.89-.38l.46,1.84A3.34,3.34,0,0,1,683.64,766.86Zm8.69,0a9.18,9.18,0,0,1-1.67.16,6.13,6.13,0,0,1-2-.32,4.37,4.37,0,0,1-1.64-1,5.1,5.1,0,0,1-1.14-1.87,8.19,8.19,0,0,1-.42-2.79,7.65,7.65,0,0,1,.47-2.85,5.24,5.24,0,0,1,1.22-1.85,4.58,4.58,0,0,1,1.68-1,5.76,5.76,0,0,1,1.86-.31,8.68,8.68,0,0,1,1.67.14,5.74,5.74,0,0,1,1.14.31l-.45,1.92a3.42,3.42,0,0,0-.9-.27,9,9,0,0,0-1.27-.08,2.75,2.75,0,0,0-2.2,1,4.57,4.57,0,0,0-.84,3,6.33,6.33,0,0,0,.2,1.63,3.51,3.51,0,0,0,.6,1.26,2.75,2.75,0,0,0,1,.81,3.1,3.1,0,0,0,1.4.29,4.58,4.58,0,0,0,1.26-.15,3.62,3.62,0,0,0,.89-.38l.46,1.84A3.33,3.33,0,0,1,692.33,766.86Z" transform="translate(-669.23 -751)"/>
+                        </svg>
+                        <svg class="video__button" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"><defs></defs><title>fullscreen</title>
+                            <polygon class="cls-1" points="0 0 0 3 0 6 3 6 3 3 6 3 6 0 3 0 0 0"/>
+                            <polygon class="cls-1" points="3 14 0 14 0 17 0 20 3 20 6 20 6 17 3 17 3 14"/>
+                            <polygon class="cls-1" points="17 0 14 0 14 3 17 3 17 6 20 6 20 3 20 0 17 0"/>
+                            <polygon class="cls-1" points="17 17 14 17 14 20 17 20 20 20 20 17 20 14 17 14 17 17"/>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="hashtag">#VisitSedona</p>
+        <ul class="social">
+            <li><a href="#" class="social__link"><img src="img/twitter.svg" alt="" width="15px" height="15px"></a></li>
+            <li><a href="#" class="social__link"><img src="img/facebook.svg" alt="" width="15px" height="15px"></a></li>
+            <li><a href="#" class="social__link"><img src="img/youtube.svg" alt="" width="15px" height="15px"></a></li>
+        </ul>
+        <div class="copyright">
+            <p>Дизайн разработан:</p>
+            <a href="https://www.htmlacademy.ru" class="button">HTML Academy</a>
+        </div>
+        <div class="copyright">
+            <p>© Код написан:<br> З.А. Сулейманов, 2019</p>
+            <a href="../index.html" class="button">В портфолио</a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
